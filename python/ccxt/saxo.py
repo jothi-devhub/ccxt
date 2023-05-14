@@ -118,7 +118,7 @@ class saxo(Exchange, ImplicitAPI):
                     'private': 'https://testnet-api.phemex.com',
                 },
                 'api': {
-                    'v1': 'https://{hostname}/v1',
+                    'v1': 'https://https://gateway.saxobank.com/sim/openapi/{}/v1/',
                     'v2': 'https://{hostname}',
                     'public': 'https://{hostname}/exchange/public',
                     'private': 'https://{hostname}',
