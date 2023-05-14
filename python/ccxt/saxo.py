@@ -39,15 +39,15 @@ from ccxt.base.precise import Precise
 class saxo(Exchange, ImplicitAPI):
 
     def describe(self):
-        return self.deep_extend(super(phemex, self).describe(), {
-            'id': 'phemex',
-            'name': 'Phemex',
-            'countries': ['CN'],  # China
+        return self.deep_extend(super(saxo, self).describe(), {
+            'id': 'saxo',
+            'name': 'Saxo Bank',
+            'countries': ['IN'],  # India
             'rateLimit': 120.5,
             'version': 'v1',
             'certified': False,
             'pro': True,
-            'hostname': 'api.phemex.com',
+            'hostname': 'gateway.saxobank.com',
             'has': {
                 'CORS': None,
                 'spot': True,
@@ -110,7 +110,7 @@ class saxo(Exchange, ImplicitAPI):
                 'withdraw': None,
             },
             'urls': {
-                'logo': 'https://user-images.githubusercontent.com/1294454/85225056-221eb600-b3d7-11ea-930d-564d2690e3f6.jpg',
+                'logo': 'https://.jpg',
                 'test': {
                     'v1': 'https://testnet-api.phemex.com/v1',
                     'v2': 'https://testnet-api.phemex.com',
