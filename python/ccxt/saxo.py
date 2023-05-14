@@ -4,7 +4,7 @@
 # https://github.com/ccxt/ccxt/blob/master/CONTRIBUTING.md#how-to-contribute-code
 
 from ccxt.base.exchange import Exchange
-from ccxt.abstract.binance import ImplicitAPI
+from ccxt.abstract.saxo import ImplicitAPI
 import hashlib
 import json
 from ccxt.base.types import OrderSide
