@@ -2,7 +2,13 @@ from ccxt.base.types import Entry
 
 
 class ImplicitAPI:
-    
+        
     #Entry def __init__(self, path, api, method, config):
-    
-    Post_place_Order = PostPlaceOrder = Entry('trade/v2/orders', 'openapi' , 'POST' ,{'cost':1})
+    Account_Values = AccountValues = Entry('openapi/hist/v3/accountValues/{ClientKey}/', 'openapi', 'GET', {'cost':1})
+    info_price_Specific_instrument = infopriceSpecificinstrument = Entry('openapi/trade/v1/infoprices', 'openapi', 'GET', {'cost':1)
+    info_price_list_instrument = infopricelistinstrument = Entry('openapi/trade/v1/infoprices/list', 'openapi', 'GET', {'cost':1})                                                                                   
+    Info_Price_Subscription = InfoPriceSubscription = Entry('openapi/trade/v1/infoprices/subscriptions', 'openapi', 'POST', {'cost':1})
+    Remove_Info_Price_Subscriptions_By_Tag = RemoveInfoPriceSubscriptionsByTag = Entry ('openapi/trade/v1/infoprices/subscriptions/{ContextId}', 'openapi', 'DELETE', {'cost':202})
+    Remove_Info_Price_Subscription_By_Id = RemoveInfoPriceSubscriptionById = Entry ('openapi/trade/v1/infoprices/subscriptions/{ContextId}/{ReferenceId}', 'openapi', 'DELETE', {'cost':202})
+                                                                                                                           
+    Post_place_Order = PostPlaceOrder = Entry('openapi/trade/v2/orders', 'openapi' , 'POST' ,{'cost':1})
