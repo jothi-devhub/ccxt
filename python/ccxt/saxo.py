@@ -1102,10 +1102,10 @@ class saxo(Exchange, ImplicitAPI):
             # 'to': self.seconds(),
             'AssetType':'FxSpot',
             'Count':'100',
-            'FieldGroups':'Data'
-            'Horizon'='15'
-            'Mode':'Upto'
-            'Time':'2023-05-15T00:00:00Z'
+            'FieldGroups':'Data',
+            'Horizon'='15',
+            'Mode':'Upto',
+            'Time':'2023-05-15T00:00:00Z',
             'Uic':'21'
         }
         duration = self.parse_timeframe(timeframe)
