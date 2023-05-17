@@ -1100,6 +1100,7 @@ class saxo(Exchange, ImplicitAPI):
             'resolution': self.safe_string(self.timeframes, timeframe, timeframe),
             # 'from': 1588830682,  # seconds
             # 'to': self.seconds(),
+            'AssetType=FxSpot&Count=100&FieldGroups=Data&Horizon=15&Mode=Upto&Time=2023-05-15T00:00:00Z&Uic=21'
         }
         duration = self.parse_timeframe(timeframe)
         now = self.seconds()
