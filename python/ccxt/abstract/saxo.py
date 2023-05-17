@@ -14,6 +14,8 @@ class ImplicitAPI:
     Change_Order = ChangeOrder = Entry('openapi/trade/v2/orders', 'openapi' , 'PATCH' ,{'cost':1})
     Cancel_Order = CancelOrder = Entry('openapi/trade/v2/orders', 'openapi' , 'DELETE' ,{'cost':1})
     Get_Chart_Data = GetChartData = Entry('openapi/chart/v1/charts', 'openai', 'GET', {'cost':1})
+    Get_Instrument_Data_Last = GetInstrumentDataLast = Entry('openapi/trade/v1/prices/subscriptions', 'openai', 'POST', {'cost':1})
+    Delete_Instrument_Data_Last = DeleteInstrumentDataLast = Entry('openapi/trade/v1/prices/subscriptions/{ContextId}/{ReferenceId}', 'openai', 'DELETE', {'cost':1})
     Chart_Data_Subscription = ChartDataSubscription = Entry('openapi/chart/v1/charts/subscriptions', 'openai', 'POST', {'cost':1})
     Chart_Data_Remove_Subscriptions = ChartDataRemoveSubscriptions = Entry('openapi/chart/v1/charts/subscriptions/{ContextId}', 'openai', 'DELETE', {'cost':1})
                                                                                     
