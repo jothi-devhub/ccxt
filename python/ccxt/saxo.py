@@ -1117,9 +1117,9 @@ class saxo(Exchange, ImplicitAPI):
             if not self.in_array(limit, possibleLimitValues):
                 limit = 100
             request['limit'] = limit
-        method = 'publicGetMdV2Kline'
+        method = 'GetChartData'
         if market['linear'] or market['settle'] == 'USDT':
-            method = 'publicGetMdV2KlineLast'
+            method = 'GetInstrumentDataLast'
         response = getattr(self, method)(self.extend(request, params))
         #
         #     {
